@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background variance</title>
+</head>
+<body id="colorchanger">
+    <h1>Background selector</h1>
+    <div id="flex">
+        <div>
+            Left to Right <br><br><br>
+            <input oninput="changeColor()" type="color" id="firstcolor" value="#ffff00">
+            <input oninput="changeColor()" type="color" id="secondcolor" value="#00ff00">
+        </div>
+        <div>
+            Top to Bottom <br><br><br>
+            <input oninput="changeColorV()" type="color" id="vfirstcolor" value="#ffff00"><br>
+            <input oninput="changeColorV()" type="color" id="vsecondcolor" value="#00ff00">
+        </div>
+    </div>
+    <h2>
+        Current Background
+    </h2>
+    <h3 id="output"></h3>
+    <h3 id="warning"></h3>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
